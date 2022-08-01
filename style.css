@@ -358,7 +358,7 @@ a {
   }
 }
 
-/* * section 2  */
+/* * header-img 2  */
 
 .header-img {
   background: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png")
@@ -397,6 +397,8 @@ h1 {
   color: #aa0601;
   border-radius: 4px;
 }
+
+/* * descript  */
 
 .descript {
   background-color: #fbf2f2;
@@ -489,6 +491,9 @@ h1 {
     width: 100%;
   }
 }
+
+/* * classic  */
+
 .classic-container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -558,6 +563,7 @@ h1 {
   }
 }
 
+/* * cooperate  */
 .cooperate {
   background: url("./images/index-bg.png") center center;
   background-size: cover;
@@ -651,6 +657,7 @@ h1 {
   }
 }
 
+/* * recommed */
 .recommed-container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -739,6 +746,7 @@ h1 {
   }
 }
 
+/* * form */
 .contact-form {
   background-color: #fbf2f2;
 }
