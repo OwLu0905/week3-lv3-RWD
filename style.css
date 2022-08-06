@@ -450,12 +450,9 @@ h1 {
 
 /* ? Q4 */
 /* Note: li不用flex排版，直接在img上m0-a */
-/* .services li {
-  display: flex;
-  flex-direction: column;
+.services li {
   width: 24%;
-  align-items: center;
-} */
+}
 
 .services img {
   margin: 0 auto;
