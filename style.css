@@ -176,9 +176,10 @@ a {
   align-content: center;
 }
 
+/* ? Q1 */
+/* Note : 不用設定，外層header-container已經排版好了*/
 .header-navbar {
   justify-content: flex-end;
-  /* align-content: center; */
 }
 .header-navbar a {
   padding: 13px 0;
@@ -189,17 +190,23 @@ a {
   text-decoration: underline;
 }
 
+/* ? Q3 */
+/* Note: container得padding不一樣是因為max-width不同 */
+/* Note: 例如平板尺寸改為max-width:720px */
+/* Note: 手機尺寸設定成375-13? */
 @media (max-width: 992px) {
   .container {
-    padding-left: 36px;
-    padding-right: 36px;
+    max-width: 720px;
+    /* padding-left: 36px; */
+    /* padding-right: 36px; */
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding-left: 13px;
-    padding-right: 13px;
+    min-width: 362;
+    /* padding-left: 13px; */
+    /* padding-right: 13px; */
   }
 
   .header-container {
@@ -232,11 +239,13 @@ a {
   }
 }
 
+/* ? Q8 */
+/* Note: footer fz 不用設定16px，瀏覽器預測就是16px */
 /* * footer */
 
 .footer {
   background-color: #aa0601;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #fff;
   line-height: 1.5;
 }
@@ -272,14 +281,22 @@ a {
   padding-bottom: 8px;
 }
 
-.media p {
+.media a {
   font-size: 36px;
-  /* margin-bottom: 8px; */
+}
+
+.media a:hover {
+  text-decoration: underline;
 }
 
 .media svg {
   width: 48px;
   margin-right: 16px;
+}
+
+.media:hover svg {
+  transform: rotate(10deg);
+  transition: 0.5s;
 }
 
 .social {
@@ -290,10 +307,13 @@ a {
   width: 48px;
   margin-left: 32px;
 }
-
-.social a:hover {
-  background-color: #650300;
-  border-radius: 8px;
+.social a img {
+  filter: invert(40%);
+}
+.social a:hover img {
+  transform: scale(1.1);
+  filter: invert(0%);
+  transition: 0.3s;
 }
 
 .copy,
@@ -313,6 +333,9 @@ a {
   margin-left: 48px;
 }
 
+.copy a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 992px) {
   .social a {
     width: 40px;
@@ -370,8 +393,9 @@ a {
 }
 
 .header-content {
-  position: relative;
-  top: 35%;
+  /* position: relative;
+  top: 35%; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -386,13 +410,13 @@ h1 {
   font-weight: 700;
   padding-bottom: 4px;
 }
-.buy a {
+.buy {
   color: #fff;
   background: #aa0601;
   font-size: 20px;
   padding: 6px 12px;
 }
-.buy a:hover {
+.buy:hover {
   background-color: #fff;
   color: #aa0601;
   border-radius: 4px;
@@ -423,14 +447,18 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.services li {
+
+/* ? Q4 */
+/* Note: li不用flex排版，直接在img上m0-a */
+/* .services li {
   display: flex;
   flex-direction: column;
   width: 24%;
   align-items: center;
-}
+} */
 
 .services img {
+  margin: 0 auto;
   width: 100px;
   padding-bottom: 16px;
 }
@@ -492,11 +520,17 @@ h1 {
   }
 }
 
+/* ? Q4 */
+/* Note: .classic-container .recommed-container改用margin推擠 */
+/* Note: padding 較常用於產生區塊內部空間，例如延伸區塊背景、增加按鈕點擊範圍等時機*/
+
 /* * classic  */
 
 .classic-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px; */
+  /* padding-bottom: 80px; */
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .classic-container h2 {
