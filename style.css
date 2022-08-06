@@ -204,7 +204,7 @@ a {
 
 @media (max-width: 767px) {
   .container {
-    min-width: 362;
+    /* max-width: 362px; */
     /* padding-left: 13px; */
     /* padding-right: 13px; */
   }
@@ -718,6 +718,11 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
+}
+
+.recommed-wrap img {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .recommed-descript {
